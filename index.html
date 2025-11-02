@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>C++ Sudoku Solver (WASM)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>C++ Sudoku Solver —</h1>
+
+    <div id="grid" class="grid"></div>
+
+    <div class="controls">
+      <button id="loadBtn">Load Example</button>
+      <button id="resetBtn">Clear</button>
+      <button id="solveBtn">Solve</button>
+      <span id="status"></span>
+    </div>
+
+    <p class="note">This runs your original C++ solver compiled to WebAssembly. 
+    You can edit numbers and press Solve.</p>
+  </div>
+
+  <!-- The generated files (sudoku.js and sudoku.wasm) will be produced by Emscripten -->
+  <script src="sudoku.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
