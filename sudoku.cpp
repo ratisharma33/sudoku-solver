@@ -81,6 +81,8 @@ int main() {
 
     if (!sudokuSolver(board, 0, 0, n)) {
         cout << "No solution exists!" << endl;
+    } else {
+        cout << "Sudoku is solved successfully!" << endl;
     }
 
     return 0;
